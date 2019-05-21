@@ -32,11 +32,14 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
+.post {
+  padding-bottom: 15px;
+}
 .about {
   text-align: center;
 }
 .post-author {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .post-date {
   color: #1abc9c;
@@ -113,9 +116,9 @@ p {
 #footer p {
   color: white;
 }
-.post:nth-child(odd) {
+.post-container:nth-child(even) {
   background-color: #CCCCCC;
 }
 .container > h1 {
-  padding-left: 100px
+  padding-left: 0;
 }
