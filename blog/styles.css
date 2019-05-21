@@ -19,7 +19,7 @@ p {
   line-height: 1.5;
 }
 .container {
-  max-width: 1065px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .column {
@@ -71,7 +71,7 @@ p {
   height: 200px;
   margin: 15px auto 0;
   display: block;
-  padding-left: 235px;
+  padding-left: 228px;
 }
 #header {
   background-color: #1abc9c;
