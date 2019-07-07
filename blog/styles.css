@@ -4,6 +4,7 @@ body {
   margin: 0;
 
   font-family: 'Montserrat', sans-serif;
+  padding-top: 130px;
 }
 a {
   color: #1abc9c;
@@ -11,12 +12,15 @@ a {
 }
 a:hover {
   color: #F6A623;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px #F6A623;
 }
 h1, h2, h3, h4 {
   color: #333;
 }
 p {
   line-height: 1.5;
+  margin-bottom: 25px;
 }
 form {
   margin: auto 170px 30px;
@@ -30,8 +34,13 @@ form {
 label {
   margin-right: 10px;
 }
-input {
+input, select {
   margin-bottom: 40px;
+  position: relative;
+  left: 10px;
+}
+span {
+  margin-right: 15px;
 }
 .container {
   max-width: 1000px;
@@ -67,6 +76,11 @@ input {
 
   padding-left: 3px;
 }
+.phone_type {
+  position: relative;
+  left: 1px;
+  margin-right: 20px;
+}
 .post-author img {
   width: 65px;
   height: 65px;
@@ -88,20 +102,30 @@ input {
   margin-left: 320px;
   display: block;
 }
-#header {
+header {
   background-color: #1abc9c;
-  height: 150px;
-  line-height: 150px;
+  height: 130px;
+  line-height: 130px;
+  overflow: hidden;
+  position: fixed; /* Err:0 FIX THIS CODE */
+  transition: 0.5s; /* Adding a a transition effect when the padding is decreased */
+  width: 100%;
+  top: 0;
+  z-index: 99;
 }
-#header a {
+header a {
   color: white;
   text-decoration: none;
 
   text-transform: uppercase;
   letter-spacing: 0.1em;
+
+  text-align: center;
 }
-#header a:hover {
+header a:hover {
   color: #222;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px #222;
 }
 #header-title {
   display: block;
@@ -109,6 +133,8 @@ input {
 
   font-size: 20px;
   font-weight: bold;
+
+  margin-right: 235px;
 }
 #header-nav {
   display: block;
@@ -119,9 +145,9 @@ input {
   display: inline;
   padding: 20px;
 }
-#footer {
+footer {
   background-color: #2f2f2f;
-  padding: 50px 0;
+  padding: 35px 0;
 }
 #fname {
   margin-right: 50px;
@@ -130,13 +156,10 @@ input {
   margin-right: 54px;
 }
 #birthdate {
-  margin-right: 65px
+  margin-right: 61px
 }
 #submit {
   text-align: center;
-}
-#phone_type {
-  margin-right: 15px;
 }
 #city {
   margin-right: 28px;
@@ -144,13 +167,58 @@ input {
 #state {
   margin-right: 28px;
 }
-#footer h4 {
+#phone_type {
+  margin-left: 28px;
+}
+#explore {
+  max-width: 60px;
+  max-height: 46px;
+
+  margin-bottom: 0px;
+}
+#hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+#hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1abc9c;
+  height: 2px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before,
+.hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  background: #CCCCCC;
+}
+footer h4 {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-#footer p {
+footer p {
   color: white;
+}
+#submit input {
+  margin: auto auto 15px;
 }
 .post-container:nth-child(even) {
   background-color: #CCCCCC;

@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en-us">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyndfulOne</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div id="header">
+<!-- Webpage Header -->
+    <header id="header">
     <div class="container">
       <a id="header-title" href="index.html">Myndful One</a>
+      <a href="index.html"><img src="exploreButton1.png" id="explore"></a>
       <ul id="header-nav">
-        <li><a href="about.html">About</a></li>
-        <li><a href="mailto:admin@myndful.org">Contact Us</a></li>
-        <li><a href="join.html">Join</a></li>
+        <li id="hvr-underline-reveal"><a href="about.html">About</a></li>
+        <li id="hvr-underline-reveal"><a href="mailto:admin@myndful.org">Contact Us</a></li>
+        <li id="hvr-underline-reveal"><a href="join.html">Join</a></li>
       </ul>
     </div>
-    </div>
-    <div id="content">
+    </header>
+<!-- Webpage Content -->
+    <main>
       <div class="container">
-        <h1>Myndful One Blog</h1>
+        <h2>Myndful One Blog</h2>
         <div class="post-container">
           <div class="post">
             <div class="post-author">
@@ -52,7 +59,7 @@
               own. While the bulk of the coding language and content I have
               learned thus far was taught to me by an instructors or professors,
               and since I am no longer in school, it seemed like the
-              <em>prefect</em> time to further my knowledge on my own.</p>
+              <em>perfect</em> time to further my knowledge on my own.</p>
               <p>This started over the past week with learning the basics of
               <strong>JavaScript</strong>. In the future I plan on trying to
               develop applicationson the <strong>Ehtereum</strong> blockchain.
@@ -66,11 +73,10 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div id="footer">
+    </main>
+<!-- Webpage Footer -->
+    <footer>
       <div class="container">
-
         <div class="column">
           <h4>Links</h4>
           <p>
@@ -81,15 +87,14 @@
             <a href="https://myndfulorg.wordpress.com/">Myndful.org</a>
           </p>
         </div>
-
         <div class="column">
           <h4>Site Mission</h4>
           <p>Hey Everyone! This is Myndful's first, from scratch, web dev
           project utilizing JavaScript, HTML, and CSS hardcode. This will be an
           educational example site for the time being..</p>
         </div>
-
       </div>
-    </div>
+    </footer>
+    <script src="nav-bar.js"></script>
   </body>
 </html>
