@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-brown" href="javascript:void(0);" onclick="myFunction1()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="nchw.html" class="w3-bar-item w3-button w3-padding-large w3-white"><b>Home</b></a>
+    <a href="aboutus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><b>About Us</b></a>
+    <a href="contactus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><b>Contact Us</b></a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><b>Gallery</b></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="nchw.html" class="w3-bar-item w3-button w3-padding-large"><b>Home</b></a>
+    <a href="aboutus.html" class="w3-bar-item w3-button w3-padding-large"><b>About Us</b></a>
+    <a href="contactus.html" class="w3-bar-item w3-button w3-padding-large"><b>Contact Us</b></a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large"><b>Gallery</b></a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-brown w3-center" style="background-image:url(images/barnwood.jpg); padding:128px 16px">
+  <image src="images/nchw_logo.jpg" alt="NoCo HomeWorks"></image>
+  <h1 class="w3-margin w3-xxxlarge">NoCo HomeWorks</h1>
+  <p class="w3-xlarge">A branch of TreeWorks</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About Us</h1>
+      <h4 class="w3-padding-32">NoCo HomeWorks is a ‘branch’ of TreeWorks Tree Service established in 2011. We specialize in
+        handyman services. We started NoCo Homeworks as way to go above and beyond our roots. So, we have compiled our best and brightest to
+        perform a nearly endless number of around-the-home services to our customers.</h4>
+      <h4> Let NoCo HomeWorks tackle your next home project! Our crew is experienced and ready to help in any way you need.</h4><br>
+      <h4>Our mission is to provide home services at a fair price.</h4><br>
+      <h4>Locally owned and operated</h4><br>
+      <p class="w3-text-grey">*Minimum service charge is $125</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-wrench w3-padding-64 w3-text-grey" style="font-size:194px"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+
+ </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
